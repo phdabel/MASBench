@@ -1,0 +1,14 @@
+br.ufrgs.MASBench
+br.ufrgs.MASBench.Assignment.DCOP
+br.ufrgs.MASBench.BinaryMaxSum.BMS
+br.ufrgs.MASBench.BinaryMaxSum.Factor
+br.ufrgs.MASBench.BinaryMaxSum.Utils
+br.ufrgs.MASBench.Comm
+br.ufrgs.MASBench.FGMD
+br.ufrgs.MASBench.Helpers.Utility
+br.ufrgs.MASBench.Solver
+br.ufrgs.MASBench.Solver.Classification
+br.ufrgs.MASBench.Solver.Operator
+br.ufrgs.MASBench.WorldModel
+br.ufrgs.MASBench.WorldModel.ClassificationModel
+br.ufrgs.MASBench.utils.Reader
