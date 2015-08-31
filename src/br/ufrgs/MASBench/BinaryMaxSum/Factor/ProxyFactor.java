@@ -146,7 +146,7 @@ public abstract class ProxyFactor<T> implements Factor<T> {
 
     @Override
     public void send(double message, T recipient) {
-        communicationAdapter.send(message, innerFactor.getIdentity(), recipient);
+    	communicationAdapter.send(message, innerFactor.getIdentity(), recipient);
     }
 
     @Override
@@ -156,14 +156,14 @@ public abstract class ProxyFactor<T> implements Factor<T> {
 
     @Override
     public long run() {
-        return innerFactor.run();
+    	return innerFactor.run();
     }
 
     private class ProxyAdapter implements CommunicationAdapter<T> {
 
         @Override
         public void send(double message, T sender, T recipient) {
-            ProxyFactor.this.send(message, recipient);
+        	ProxyFactor.this.send(message, recipient);
         }
 
     }

@@ -67,5 +67,7 @@ public class Constants {
 
     /** Key to identify the main solver being run */
     public static final String KEY_MAIN_SOLVER = "main_solver";
+    
+    public final static double DELTA = 0.0001d;
 
 }

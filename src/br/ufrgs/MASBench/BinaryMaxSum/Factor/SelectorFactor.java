@@ -80,13 +80,13 @@ public class SelectorFactor<T> extends AbstractFactor<T> {
         // Compute the minimums
         tracker.reset();
         for (T f : getNeighbors()) {
-            tracker.track(f, getMessage(f));
+        	tracker.track(f, getMessage(f));
         }
 
         // Send messages
         for (T f : getNeighbors()) {
-            final double value = -tracker.getComplementary(f);
-            send(value, f);
+        	final double value = -tracker.getComplementary(f);
+        	send(value, f);
         }
 
         return getNeighbors().size()*2;

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import br.ufrgs.MASBench.WorldModel.Entity;
+import br.ufrgs.MASBench.Entity;
 
 /**
  * Communication Layer with two types of messages
@@ -33,7 +33,7 @@ public class CommunicationLayer {
      */
     public void send(Entity agentID, Message message) {
         // Fetch the inbox, creating it if it doesn't exist yet
-        List<Message> inbox = messageInboxes.get(agentID);
+    	List<Message> inbox = messageInboxes.get(agentID);
         if (inbox == null) {
             inbox = new ArrayList<>();
             messageInboxes.put(agentID, inbox);
@@ -79,7 +79,7 @@ public class CommunicationLayer {
      * @return a list of alla the messages received
      */
     public List<Message> retrieveMessages(Entity agentID) {
-        List<Message> mesageInbox = messageInboxes.remove(agentID);
+    	List<Message> mesageInbox = messageInboxes.remove(agentID);
         if (mesageInbox == null) {
             mesageInbox = new ArrayList<>();
         }
