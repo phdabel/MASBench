@@ -1,6 +1,0 @@
-mvn compile;
-mvn package;
-mvn clean install;
-cp target/GroupingMessagePassing-0.9-SNAPSHOT.jar ../OptApi/lib/br/ufrgs/MASBench/
-cd ../OptApi/lib/br/ufrgs/MASBench
-

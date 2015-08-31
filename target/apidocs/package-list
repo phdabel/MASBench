@@ -1,8 +1,0 @@
-br.ufrgs.MASBench
-br.ufrgs.MASBench.BinaryMaxSum.BMS
-br.ufrgs.MASBench.BinaryMaxSum.Factor
-br.ufrgs.MASBench.BinaryMaxSum.Utils
-br.ufrgs.MASBench.Comm
-br.ufrgs.MASBench.Solver.Operator
-br.ufrgs.MASBench.utils.Reader
-test
